@@ -1,0 +1,112 @@
+
+/* Fonts */
+
+
+
+/* Poppins */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/exfo/fonts/Poppins/Poppins-Regular.ttf') format('tff');
+    font-style: normal;
+    font-weight: normal;
+}
+.font-poppins {
+    font-family: 'Poppins';
+    font-weight: 100 150 200 300 400 500 600 700 800 900;
+}
+
+/* Didact_Gothic */
+@font-face {
+    font-family: 'DidactGothic';
+    src: url('/exfo/fonts/Didact_Gothic/DidactGothic-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+.font-didactGothic {
+    font-family: 'DidactGothic';
+    font-weight: 100 200 300 400 500 600 700 800 900;
+}
+
+/* Monaco */
+/* @font-face {
+    font-family: 'Monaco';
+    src: url('/exfo/fonts/webfonts_CartoGothicStd-Book/CartoGothicStd-Book.ttf.woff') format('woff');
+}
+.font-monaco {
+    font-family: 'Monaco';
+    font-weight: 100 200 300 400 500 600 700 800 900;
+    font-style: normal;
+} */
+
+/* CartoGothicStd */
+@font-face {
+  font-family: 'CartoGothicStd-Book';
+    src:  url('/exfo/fonts/webfonts_CartoGothicStd-Book/CartoGothicStd-Book.ttf.woff') format('woff'),
+    url('/exfo/fonts/webfonts_CartoGothicStd-Book/CartoGothicStd-Book.ttf.svg#CartoGothicStd-Book') format('svg'),
+    url('/exfo/fonts/webfonts_CartoGothicStd-Book/CartoGothicStd-Book.ttf.eot'),
+    url('/exfo/fonts/webfonts_CartoGothicStd-Book/CartoGothicStd-Book.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+.font-cartoGothicStd {
+    font-family: 'CartoGothicStd-Book';
+    font-weight: 100 200 300 400 500 600 700 800 900;
+    font-style: normal;
+    line-height: 1;
+}
+
+
+/* Style */
+.ligatures{
+    font-feature-settings: 'calt' 1;  /* Enable ligatures for IE 10+, Edge */
+    text-rendering: optimizeLegibility;  /* Force ligatures for Webkit, Blink, Gecko */
+}
+
+/* Keyword values */
+.ligatures-normal{
+    font-variant-ligatures: normal;
+}
+.ligatures-none{
+    font-variant-ligatures: none;
+}
+.ligatures-common-ligatures{
+    font-variant-ligatures: common-ligatures; /* <common-lig-values> */
+}
+.ligatures-no-common-ligatures{
+    font-variant-ligatures: no-common-ligatures; /* <common-lig-values> */
+}
+.ligatures-discretionary-ligatures{
+    font-variant-ligatures: discretionary-ligatures; /* <discretionary-lig-values> */
+}
+.ligatures-no-discretionary-ligatures{
+    font-variant-ligatures: no-discretionary-ligatures; /* <discretionary-lig-values> */
+}
+.ligatures-historical-ligatures{
+    font-variant-ligatures: historical-ligatures; /* <historical-lig-values> */
+}
+.ligatures-no-historical-ligatures{
+    font-variant-ligatures: no-historical-ligatures; /* <historical-lig-values> */
+}
+.ligatures-contextual{
+    font-variant-ligatures: contextual; /* <contextual-alt-values> */
+}
+.ligatures-no-contextual{
+    font-variant-ligatures: no-contextual; /* <contextual-alt-values> */
+}
+
+/* Global values */
+.ligatures-inherit{
+    font-variant-ligatures: inherit;
+}
+.ligatures-initial{
+    font-variant-ligatures: initial;
+}
+.ligatures-revert{
+    font-variant-ligatures: revert;
+}
+.ligatures-revert-layer{
+    font-variant-ligatures: revert-layer;
+}
+.ligatures-unset{
+    font-variant-ligatures: unset;
+}
