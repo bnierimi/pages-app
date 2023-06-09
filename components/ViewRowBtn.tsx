@@ -12,7 +12,7 @@ export default function ViewRowBtn({ data }: any) {
 
           {/* ~ link to page: icon */}
           <div className="flex">
-            <i className={`icon icon-ic_fluent_text_align_left_20_regular flex text-lg text-zinc-700 bg-amber-500 rounded p-1`}></i>
+            <i className={`icon icon-ic_fluent_text_align_left_20_regular flex text-xl text-zinc-700 bg-amber-500 rounded p-1`}></i>
           </div>
 
           {/* ~ link to page: info */}

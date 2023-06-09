@@ -6,8 +6,8 @@
 ## list of interfaces
 
 -[x] **/**          - Home
--[ ] **/pg/[id]**   - Page
--[ ] **/pg/[id]/e** - Page edit
+-[x] **/pg/[id]**   - Page
+-[x] **/pg/[id]/e** - Page edit
 -[ ] **/pg/new**    - New page
 -[ ] **archive**    - Archive
 -[ ] **bin**        - Bin

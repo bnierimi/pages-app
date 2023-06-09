@@ -1,9 +1,9 @@
-// import Image from 'next/image'
+// import Image from 'next/image';
 import Link from "next/link";
-import Avatar from "boring-avatars"
+import Avatar from "boring-avatars";
 
 import ViewRowBtn from "@/components/ViewRowBtn";
-// import './app.js'
+// import './app.js';
 
 export default function Home() {
   
@@ -48,7 +48,7 @@ export default function Home() {
 		    <div className="w-full flex items-center justify-between px-4 md:px-20 py-1">
           
           {/* ~ top bar: filter select */}
-          <button type="button" className="bg-zinc-200 dark:bg-zinc-500/20 hover:bg-zinc-300 dark:hover:bg-zinc-500/30 md:bg-zinc-300 md:hover:bg-zinc-400/50 text-xs flex items-center space-x-1 rounded-full px-2 py-1 focus:outline-none focus:ring-1 focus:ring-violet-600">
+          <button className="bg-zinc-200 dark:bg-zinc-500/20 hover:bg-zinc-300 dark:hover:bg-zinc-500/30 md:bg-zinc-300 md:hover:bg-zinc-400/50 text-xs flex items-center space-x-1 rounded-full px-2 py-1 focus:outline-none focus:ring-1 focus:ring-violet-600">
             <p className="">Last opened by me</p>
             <i className="icon icon-ic_fluent_arrow_down_20_regular flex text-xs"></i>
           </button>
@@ -70,16 +70,18 @@ export default function Home() {
         {/* ~ list of pages: display pages */}
 		    <div className={`h-full w-full pb-10 py-1 space-y-1} `}>
 				  {
-            dbData.map((eachData: any) => <ViewRowBtn data={eachData}/>)
+            dbData.map((eachData, key):any => <span key={key}>
+              <ViewRowBtn data={eachData}/>
+            </span>)
           }
         </div>
         
       </section>
 
       {/* (app): <sm> create new page btn */}
-      <a href="/" title="New page" className="flex md:hidden p-2 fixed bottom-3 right-3 bg-amber-500 hover:bg-amber-400 dark:text-zinc-700 rounded-full focus:outline-none focus:ring-1 focus:ring-violet-600 shadow-lg">
+      <Link href="/pg/new" title="New page" className="flex md:hidden p-2 fixed bottom-3 right-3 bg-amber-500 hover:bg-amber-400 dark:text-zinc-700 rounded-full focus:outline-none focus:ring-1 focus:ring-violet-600 shadow-lg">
         <i className="icon icon-ic_fluent_add_20_filled flex text-2xl"></i>
-      </a>
+      </Link>
     </main>
   )
 }
